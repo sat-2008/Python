@@ -1,0 +1,367 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "toc_visible": true,
+      "authorship_tag": "ABX9TyMuzo61nJv8rCINT1NIzjGT",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/sat-2008/Python/blob/main/Python%20Practice%20Conditional%20Statement\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Conditional Statement"
+      ],
+      "metadata": {
+        "id": "hmSqT4osRKgT"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 1. Write a program to check whether a number is positive, negative, or zero.\n",
+        "num = int(input(\"Enter Number: \"))\n",
+        "if(num>=1):\n",
+        "  print(\"Positive\")\n",
+        "elif(num<=-1):\n",
+        "  print(\"Negative\")\n",
+        "else:\n",
+        "  print(\"Zero\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EegR_SlDRbPt",
+        "outputId": "808d85f2-f863-4891-c2e0-270d3bb3012f"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter Number: 6\n",
+            "Positive\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 2. Write a program to check whether a number is even or odd.\n",
+        "num = int(input(\"Enter Number: \"))\n",
+        "if(num %2 == 0):\n",
+        "  print(\"Even\")\n",
+        "else:\n",
+        "  print(\"Odd\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CKic7bv0Rnvt",
+        "outputId": "87922b6b-b6fa-422d-cb76-8b7f692b6697"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter Number: 2\n",
+            "Even\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 3. Write a program to check whether a person is eligible to vote. The minimum\n",
+        "#    age is 18.\n",
+        "age = int(input(\"Enter Number: \"))\n",
+        "if(age >= 18):\n",
+        "  print(\"Eligible\")\n",
+        "else:\n",
+        "  print(\"Not Eligible\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WBO_h5xERpoZ",
+        "outputId": "cf49b707-2124-45e8-fd87-49c99fab1048"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter Number: 18\n",
+            "Eligible\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 4. Write a program to find the greater of two numbers.\n",
+        "num1 = int(input(\"Enter first Number: \"))\n",
+        "num2 = int(input(\"Enter second Number: \"))\n",
+        "if(num1 > num2):\n",
+        "  print(\"num1 is greater\")\n",
+        "elif(num1 < num2):\n",
+        "  print(\"num2 is greater\")\n",
+        "else:\n",
+        "  print(\"Equal\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xbidJKt3RrZ_",
+        "outputId": "e816472b-0ee0-43d4-a20b-65ab0fb655e3"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter first Number: 6\n",
+            "Enter second Number: 8\n",
+            "num2 is greater\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 5. Write a program to check whether a number is divisible by 5.\n",
+        "num = int(input(\"Enter Number: \"))\n",
+        "if(num %5 == 0):\n",
+        "  print(\"Divisible\")\n",
+        "else:\n",
+        "  print(\"Not Divisible\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bYI27cIgRtBz",
+        "outputId": "1cc87c22-f692-4b87-8086-70b7784b5817"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter Number: 11\n",
+            "Not Divisible\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 6. Write a program to check whether a character is a vowel or consonant.\n",
+        "character = input(\"Enter character: \")\n",
+        "if character in \"A a E e I i O o U u\":\n",
+        "  print(\"Vowel\")\n",
+        "else:\n",
+        "  print(\"Consonant\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qrgkpZOcRuia",
+        "outputId": "085bec3f-fccb-422f-d6f5-5752fe1ea0ff"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter character: A\n",
+            "Vowel\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 7. Write a program to find the largest among three numbers.\n",
+        "num1 = int(input(\"Enter first Number: \"))\n",
+        "num2 = int(input(\"Enter second Number: \"))\n",
+        "num3 = int(input(\"Enter second Number: \"))\n",
+        "if(num1 > num2 and num1 > num3):\n",
+        "  print(\"num1 is greater\")\n",
+        "elif(num2 > num3 and num2 > num1):\n",
+        "  print(\"num2 is greater\")\n",
+        "elif(num3 > num1 and num3 > num1):\n",
+        "  print(\"num3 is greater\")\n",
+        "else:\n",
+        "  print(\"Equal\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FvTvEJvnRx-Z",
+        "outputId": "0b5213ad-f92f-4a89-de47-287c8f27dbda"
+      },
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter first Number: 1\n",
+            "Enter second Number: 1\n",
+            "Enter second Number: 1\n",
+            "Equal\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 8. Write a program to check whether a number is divisible by both 3 and 5.\n",
+        "num = int(input(\"Enter Number: \"))\n",
+        "if(num %5 == 0 and num %3 == 0):\n",
+        "  print(\"Divisible by both\")\n",
+        "else:\n",
+        "  print(\"Not Divisible\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SN9_KREeR0CH",
+        "outputId": "36941c09-2bbc-4763-814d-8d1b57f20b27"
+      },
+      "execution_count": 36,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter Number: 9\n",
+            "Not Divisible\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 9. Write a program to check whether three given sides can form a valid\n",
+        "#    triangle.\n",
+        "side1 = int(input(\"Enter first side: \"))\n",
+        "side2 = int(input(\"Enter second side: \"))\n",
+        "side3 = int(input(\"Enter second side: \"))\n",
+        "if(side1 == 0 and side2 == 0 and side3 == 0):\n",
+        "  print(\"Side must be greater tha zero\")\n",
+        "elif(side1 == side2 == side3):\n",
+        "  print(\"Valid triangle\")\n",
+        "else:\n",
+        "  print(\"Not a valid triangle\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZkqtRmmhR23g",
+        "outputId": "c97dac3c-593a-49e1-ef75-676166146722"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter first side: 1\n",
+            "Enter second side: 2\n",
+            "Enter second side: 2\n",
+            "Not a valid triangle\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 10. Write a program to create a simple calculator that performs addition,\n",
+        "#     subtraction, multiplication, or division based on the user’s choice.\n",
+        "num1 = float(input(\"Enter first number: \"))\n",
+        "cal = input(\"Enter symbol: \")\n",
+        "num2 = float(input(\"Enter second number: \"))\n",
+        "if(cal == \"+\"):\n",
+        "  sum = num1 + num2\n",
+        "  print(sum)\n",
+        "elif(cal == \"-\"):\n",
+        "  subtraction = num1 - num2\n",
+        "  print(subtraction)\n",
+        "elif(cal == \"*\"):\n",
+        "  multiplication = num1 * num2\n",
+        "  print(multiplication)\n",
+        "elif(cal == \"/\"):\n",
+        "  division = num1 / num2\n",
+        "  print(division)\n",
+        "else:\n",
+        "  print(\"Enter the correct symbol\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PvXish031cNU",
+        "outputId": "bac04a5f-98ea-4e0e-c865-f7b4ad14efc2"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter first number: 2\n",
+            "Enter symbol: ^\n",
+            "Enter second number: 5\n",
+            "Enter the correct symbol\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
